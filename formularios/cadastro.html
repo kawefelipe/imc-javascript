@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Cadastro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+        }
+        body {
+            background-repeat: no-repeat;
+            background-color: #d3d3d3;
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to bottom,  #f0efef, rgb(255, 254, 254), #ebebeb);        }
+        h1 {
+            color: rgb(77, 192, 291);
+            text-align: center;
+            font-size: 25px;
+        }
+        form {
+            /* border: 1px solid blue; */
+            width: 85%;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        form label, 
+        form input, 
+        form button {
+            display:block;
+            width: 100%;
+            padding-left: 8px;
+        }
+        form label {
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        form input {
+            height: 30px;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            border: 1px solid lightgray;
+            font-size: 14px;
+        }
+        form input:focus {
+            background-color: #ebebeb;
+            color: white;
+        }
+        #logo {
+            text-align: center;
+            color:rgb(77, 192, 291);
+            font-size: 28px;
+            padding: 15px 0 0 0;
+            margin: 0;
+            /* border: 1px solid red; */
+        }
+        form button:first-of-type   {
+            padding: 12px;
+            margin-bottom: 14px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(77, 192, 291);
+            border-radius: 3px;
+            box-shadow: 3px 3px 3px lightgray;
+            border: none;
+        }
+        #entrar:hover   {
+            box-shadow: 3px 3px 3px #b9b9b9;
+        }
+        form button:last-of-type {
+            color: rgb(77, 192, 291);
+            border: none;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <i class="fas fa-user-graduate"></i><h1>Totvs
+        </h1>
+    </div>
+    <form action="">
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario" placeholder="Insira seu usuário" required>
+
+    <label for="senha">Senha:</label>
+    <input type="password" placeholder="Insira sua senha" id="senha" required>
+
+    <button id="entrar" type="submit">Entrar</button>
+    <button type="button">Configurações avançadas</button>
+    </form>
+</body>
+</html>

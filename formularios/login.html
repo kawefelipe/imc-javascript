@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            background-repeat: no-repeat;
+            background-color: #d3d3d3;
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to bottom,  #f0efef, rgb(255, 254, 254), #ebebeb);        }
+
+            h1{
+                align-self: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color:  rgb(134, 0, 72);
+                color: rgb(255, 255, 255);
+                order: 1px solid  rgb(124, 172, 226)
+            }
+
+            form .linha{padding-left: 10px;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                padding: 5px;
+                margin-bottom: 10px;
+                border-radius: 25px;
+                 background-color:rgb(97, 171, 255);   
+                color: white;    
+
+            }
+            form .linha i{
+                margin-left: 10px;
+
+            }
+                form .linha input{
+                    width: 90%;
+                    height: 30px;
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                }
+
+           form,.link{ border: 1px solid transparent
+
+            }
+            form button {
+                    width: 100%;
+                    height: 30px;
+                margin-bottom: 10px;
+                border-radius: 25px;
+                color: white;
+            }
+            form button:first-of-type{
+                background-color: rgb(184, 0, 98);
+                border: 1px solid rgb(184, 0, 98);
+                margin-top: 10px;
+            }
+            form button:last-of-type{
+                background-color: rgb(93, 93, 253);
+                border: 1px solid rgb(93, 93, 255);
+                
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .links a{
+                margin-top: 4px;
+                color: teal;
+                text-decoration: none;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <i class="fas fa-american-sign-language-interpreting"></i>
+    </h1>
+
+    <form action="">
+        <div class="linha">
+            <i class="fab fa-odnoklassniki"></i>
+            <input type="text" id="login" placeholder="username">
+           
+        </div>
+
+        <div class="linha">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="senha" placeholder="password">
+           
+        </div>
+        <button type="submit">sign in</button>
+        <button type="button">facebook</button>
+    </form>
+
+    <div class="links">
+        <a href="#">Forgot password?</a>
+        <br>
+        <a href="#">Dont't have an account? sing up</a>
+    </div>
+</body>
+</html>

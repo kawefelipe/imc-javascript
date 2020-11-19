@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            display: flex;
+            width: 700px;
+            height: 500px;
+            background-color: 3px solid salmon;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-between ;
+        }
+
+        article{
+            width: 150px;
+            height: 150px;
+            background-color: salmon;
+            border-radius: 10px;
+            justify-content: flex-start;
+            }
+            
+            
+    </style>
+</head>
+<body>
+ 
+    <section>
+        <article>item 1</article>
+        <article>item 2</article>
+        <article>item 3</article>
+        <article>item 3</article>
+        <article>item 3</article>
+        <article>item 3</article>
+        <article>item 3</article>
+        <article>item 3</article>
+        <article>item 3</article>
+        <article>item 3</article>
+        <article>item 3</article>
+        <article>item 3</article>
+        <article>item 3</article>
+    </section>
+</body>
+</html>
